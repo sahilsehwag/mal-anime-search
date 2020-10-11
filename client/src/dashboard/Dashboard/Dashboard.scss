@@ -1,0 +1,67 @@
+@import 'resources/styles/_colors';
+
+.dashboard {
+	width: 70%;
+	margin: auto auto 10vh auto;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	color: $primary-color;
+	font-size: 5rem;
+	margin-bottom: 0px;
+}
+
+.-l-search-anime {
+	width: 100%;
+	background-color: $background-color;
+	padding-bottom: 2.5rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	position: sticky;
+	top: 0;
+	padding-top: 2.5rem;
+	z-index: 3;
+
+	.search-anime {
+		width: 80%;
+		display: flex;
+		margin-bottom: 1rem;
+
+		$padding: 0.75rem 1rem;
+		&__input {
+			flex-basis: 100%;
+			padding: $padding;
+			outline: none;
+			color: $primary-color;
+		}
+		&__button {
+			background-color: $primary-color;
+			color: $primary-color-text;
+			padding: $padding;
+			cursor: pointer;
+			&:hover { opacity: 0.8; }
+		}
+	}
+	.request-url {
+		color: $primary-color;
+	}
+}
+
+.load-more {
+	margin-top: 3rem;
+	font-size: 1.5rem;
+	background-color: $primary-color;
+	color: $primary-color-text;
+	border-radius: 2.5%;
+	padding: 0.5rem 1.25rem;
+	cursor: pointer;
+
+	&:hover { opacity: 0.8; }
+}
